@@ -1,0 +1,92 @@
+
+
+@import url('https://fonts.cdnfonts.com/css/autography');
+
+body{
+    background-color: var(--background-color);
+}
+
+.text-container{
+    background-color: var(--secondary-background-color);
+    border-radius: 15px;
+    border-color: var(--margin-color);
+    color: var(--font-color);
+}
+
+.btn-bandidi{
+    background-color: var(--font-color);
+}
+
+
+/* Carteles */
+
+
+    /* primer mensaje (fuera el de bienvenida) */
+
+.SecondMessage, .ThirdMessage, .FourthMessage,.EndMessage{
+    display: none;
+}
+
+.TextSecond{
+    margin-top: 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.TextThird{
+    margin-top: 0px;
+    font-size: 34px;
+    text-align: center;
+}
+
+.EndText{
+    top: 50%;
+    font-family: 'Autography', sans-serif;
+    font-size: 100px;
+}
+
+.animacionFin{
+    animation-name: Firma;
+    animation-duration: 2s;
+    animation-fill-mode: forwards ;
+}
+
+.imagen{
+    display: none;
+    animation-name: imagen;
+    animation-duration: 2s;
+    animation-fill-mode: forwards ;
+}
+
+
+@keyframes Firma {
+    100% {top: 20%;}
+}
+
+/* Propiedades de orden */
+.top-60{
+    top: 60% !important;
+}
+
+.top-80{
+    top: 80% !important;
+}
+
+.top-20{
+    top: 20% !important;
+}
+
+.start-90{
+    left: 90% !important;
+}
+
+p>i, p>span{
+    color: #ffbb00;
+}
+
+:root{
+    --background-color: #7d3c98;
+    --secondary-background-color: #512e5f;
+    --margin-color: #9a31c4;
+    --font-color: #fefefe;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi bandida favorita</title>
+
+    
+</head>
+<body id="container">
+
+    <script>
+       
+    </script>
+
+    <div onload="fullscreen()" class="container-fluid position-relative" style="padding-left: 0rem; padding-right: 0rem; height: 100vh;">
+        <div class="text-container position-absolute top-50 start-50 translate-middle" style="padding-left: 0rem; padding-right: 0rem; height: 80%; width: 80%;">
+           <!-- Firs monda --> 
+            <div class="position-relative" id="StartMessage" style="padding-left: 0rem;padding-right: 0rem;height: 100%;width: 100%;">
+                <h1 class="position-absolute top-50 start-50 translate-middle">Para mi bandidi <i class="fa-solid fa-heart"></i></h1>
+                <button type="button" id="StartButton" onclick="iniciar(); fullscreen()" class="position-absolute top-60 start-50 translate-middle btn btn-bandidi">Siguiente</button>
+            </div>
+            
+            <!-- Second monda -->
+            
+            <div class="position-relative SecondMessage" id="SecondMessage" style="padding-left: 0rem;padding-right: 0rem;height: 100%; width: 100%;">
+                <p class="TextSecond position-absolute top-50 start-50 translate-middle">Daya has sido una persona unica, una persona que has sido de las pocas en comprenderme en muchas ocaciones y tu has sido de esas personas
+                    que me han motivado en seguir adelante, no solo como <br><i class="fa-solid fa-code"></i> programador si no tambien como <span class="material-symbols-outlined"> flight_takeoff </span> piloto, esa persona que aunque me has visto en
+                    mis peores momentos has sabido como hacer que salga de ahi, has presenciados muchos momentos de mi  <i class="fa-solid fa-heart"></i> vida, desde mi <span class="material-symbols-outlined"> group_add </span> primer mejor amigo
+                    el cual a sido angelo, hasta el día que casi me muero en una  <span class="material-symbols-outlined"> minor_crash </span> carretera, has sido una persona que no se como ha estado al lado a pesar
+                    que yo muchas veces haya sido tan mierda con todos y que no me importara... me has visto <span class="material-symbols-outlined"> sentiment_dissatisfied </span> llorar, me has visto <span class="material-symbols-outlined"> sentiment_satisfied </span> reir, me has visto aprender
+                    a ver la vida de otra manera y no a ser una persona tan cerrada, quiero que sepas lo DEMASIADO MUCHO PFFF QUE TE APRECIO!.... Me duele saber
+                    que cuando estuviste al lado mio no pude saber la chimba de amiga, mujer, hermana, hija, sobrina, etc que tenia al lado mio
+                    </p>
+                <button type="button" id="SecondButton" onclick="segundo()" class="position-absolute top-50 start-90 translate-middle btn btn-bandidi"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!-- Tercerda monda -->
+
+            <div class="position-relative ThirdMessage" id="ThirdMessage" style="padding-left: 0rem;padding-right: 0rem;height: 100%; width: 100%;">
+                <p class="TextThird position-absolute top-50 start-50 translate-middle">Esta pagina siempre estara al aire y quiero que cuando te sientas sola, triste, sin una luz vuelvas aca y vuelvas a leer para entender que
+                    este mka que se hace llamar Julían en realidad si te quiso y te aprecio mas de lo que te imaginas, mas de lo que el jamas podra expresar a
+                    otras personas con actos</p>
+                <button type="button" id="ThirdButton" onclick="tercero()" class="position-absolute top-50 start-90 translate-middle btn btn-bandidi"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!-- Cuarta monda -->
+
+            <div class="position-relative FourthMessage" id="FourthMessage" style="padding-left: 0rem;padding-right: 0rem;height: 100%; width: 100%;">
+                <p class="TextThird position-absolute top-50 start-50 translate-middle">mientras escribia esto no sabes cuantos sentimientos pasan por mi cabeza, amor, odio, una esperanza que ni yo se donde viene y hasta miedo jajsajas pero ya para terminar
+                    esto lo unico que quiero que sepas es que nunca te olvidare... y esto no sera un adios si no un hasta pronto te lo aseguro</p>
+                <button type="button" id="FourthButton" onclick="cuarto()" class="position-absolute top-50 start-90 translate-middle btn btn-bandidi"><i class="fa-solid fa-arrow-right"></i></button>
+            </div> 
+            <!-- FIN -->
+
+            <div class="position-relative EndMessage" id="EndMessage" style="padding-left: 0rem;padding-right: 0rem;height: 100%; width: 100%;">
+                <h1 class="EndText position-absolute start-50 translate-middle" id="EndText">Att: Mr.Pilot </h1>
+                    <img id="endImg" class="position-absolute top-60 start-50 translate-middle" src="foto.jpg" style="border-radius: 15%; display: none;" width="30%">
+            </div>
+            
+
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/03b0ac721b.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
